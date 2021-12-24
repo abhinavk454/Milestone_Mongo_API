@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" name="/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/test/grades.test.js" errors="0" package="/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/test/grades.test.js" hostname="localhost" tests="8" failures="8" time="79.231" timestamp="2021-12-17T08:44:03">
+    <properties>
+    </properties>
+    <testcase classname="Adding a valid mark statement" name="Adding a valid mark statement" time="0">
+      <failure message="Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:25:45)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)" type="AssertionError">
+      </failure>
+      <failure message="Error: expected 201 &quot;Created&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt;.test (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/test/grades.test.js:22:6)
+    at Object.asyncJestTest (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+----
+    at Test.Object.&lt;anonymous&gt;.Test._assertStatus (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:304:12)
+    at /mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:80:15
+    at Test.Object.&lt;anonymous&gt;.Test._assertFunction (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:338:11)
+    at Test.Object.&lt;anonymous&gt;.Test.assert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:209:21)
+    at Server.localAssert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:167:12)
+    at Object.onceWrapper (events.js:286:20)
+    at Server.emit (events.js:198:13)
+    at emitCloseNT (net.js:1619:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Adding a mark statement with name having lesser than 3 characters" name="Adding a mark statement with name having lesser than 3 characters" time="0">
+      <failure message="MongooseError: Operation `marks.deleteMany()` buffering timed out after 10000ms
+    at setTimeout (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:198:23)
+    at Timeout.callback (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jsdom/lib/jsdom/browser/Window.js:678:19)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)" type="AssertionError">
+      </failure>
+      <failure message="Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:25:45)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)" type="AssertionError">
+      </failure>
+      <failure message="Error: expected 400 &quot;Bad Request&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt;.test (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/test/grades.test.js:40:6)
+    at Object.asyncJestTest (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+----
+    at Test.Object.&lt;anonymous&gt;.Test._assertStatus (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:304:12)
+    at /mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:80:15
+    at Test.Object.&lt;anonymous&gt;.Test._assertFunction (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:338:11)
+    at Test.Object.&lt;anonymous&gt;.Test.assert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:209:21)
+    at Server.localAssert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:167:12)
+    at Object.onceWrapper (events.js:286:20)
+    at Server.emit (events.js:198:13)
+    at emitCloseNT (net.js:1619:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Adding a mark statement with name having special characters" name="Adding a mark statement with name having special characters" time="0">
+      <failure message="MongooseError: Operation `marks.deleteMany()` buffering timed out after 10000ms
+    at setTimeout (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:198:23)
+    at Timeout.callback (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jsdom/lib/jsdom/browser/Window.js:678:19)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)" type="AssertionError">
+      </failure>
+      <failure message="Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:25:45)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)" type="AssertionError">
+      </failure>
+      <failure message="Error: expected 400 &quot;Bad Request&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt;.test (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/test/grades.test.js:56:6)
+    at Object.asyncJestTest (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+----
+    at Test.Object.&lt;anonymous&gt;.Test._assertStatus (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:304:12)
+    at /mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:80:15
+    at Test.Object.&lt;anonymous&gt;.Test._assertFunction (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:338:11)
+    at Test.Object.&lt;anonymous&gt;.Test.assert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:209:21)
+    at Server.localAssert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:167:12)
+    at Object.onceWrapper (events.js:286:20)
+    at Server.emit (events.js:198:13)
+    at emitCloseNT (net.js:1619:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Adding a mark statement with invalid department" name="Adding a mark statement with invalid department" time="0">
+      <failure message="MongooseError: Operation `marks.deleteMany()` buffering timed out after 10000ms
+    at setTimeout (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:198:23)
+    at Timeout.callback (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jsdom/lib/jsdom/browser/Window.js:678:19)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)" type="AssertionError">
+      </failure>
+      <failure message="Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:25:45)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)" type="AssertionError">
+      </failure>
+      <failure message="Error: expected 400 &quot;Bad Request&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt;.test (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/test/grades.test.js:72:6)
+    at Object.asyncJestTest (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+----
+    at Test.Object.&lt;anonymous&gt;.Test._assertStatus (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:304:12)
+    at /mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:80:15
+    at Test.Object.&lt;anonymous&gt;.Test._assertFunction (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:338:11)
+    at Test.Object.&lt;anonymous&gt;.Test.assert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:209:21)
+    at Server.localAssert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:167:12)
+    at Object.onceWrapper (events.js:286:20)
+    at Server.emit (events.js:198:13)
+    at emitCloseNT (net.js:1619:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Adding a mark statement with negative marks" name="Adding a mark statement with negative marks" time="0">
+      <failure message="MongooseError: Operation `marks.deleteMany()` buffering timed out after 10000ms
+    at setTimeout (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:198:23)
+    at Timeout.callback (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jsdom/lib/jsdom/browser/Window.js:678:19)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)" type="AssertionError">
+      </failure>
+      <failure message="Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:25:45)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)" type="AssertionError">
+      </failure>
+      <failure message="Error: expected 400 &quot;Bad Request&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt;.test (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/test/grades.test.js:88:6)
+    at Object.asyncJestTest (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+----
+    at Test.Object.&lt;anonymous&gt;.Test._assertStatus (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:304:12)
+    at /mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:80:15
+    at Test.Object.&lt;anonymous&gt;.Test._assertFunction (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:338:11)
+    at Test.Object.&lt;anonymous&gt;.Test.assert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:209:21)
+    at Server.localAssert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:167:12)
+    at Object.onceWrapper (events.js:286:20)
+    at Server.emit (events.js:198:13)
+    at emitCloseNT (net.js:1619:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Getting results of all the students" name="Getting results of all the students" time="0">
+      <failure message="MongooseError: Operation `marks.deleteMany()` buffering timed out after 10000ms
+    at setTimeout (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:198:23)
+    at Timeout.callback (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jsdom/lib/jsdom/browser/Window.js:678:19)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)" type="AssertionError">
+      </failure>
+      <failure message="Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:25:45)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)" type="AssertionError">
+      </failure>
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt;.test (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/test/grades.test.js:93:55)
+    at Object.asyncJestTest (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+----
+    at Test.Object.&lt;anonymous&gt;.Test._assertStatus (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:304:12)
+    at /mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:80:15
+    at Test.Object.&lt;anonymous&gt;.Test._assertFunction (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:338:11)
+    at Test.Object.&lt;anonymous&gt;.Test.assert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:209:21)
+    at Server.localAssert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:167:12)
+    at Object.onceWrapper (events.js:286:20)
+    at Server.emit (events.js:198:13)
+    at emitCloseNT (net.js:1619:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Getting resulst of students of a particular department" name="Getting resulst of students of a particular department" time="0">
+      <failure message="MongooseError: Operation `marks.deleteMany()` buffering timed out after 10000ms
+    at setTimeout (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:198:23)
+    at Timeout.callback (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jsdom/lib/jsdom/browser/Window.js:678:19)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)" type="AssertionError">
+      </failure>
+      <failure message="Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:25:45)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)" type="AssertionError">
+      </failure>
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt;.test (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/test/grades.test.js:113:6)
+    at Object.asyncJestTest (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+----
+    at Test.Object.&lt;anonymous&gt;.Test._assertStatus (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:304:12)
+    at /mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:80:15
+    at Test.Object.&lt;anonymous&gt;.Test._assertFunction (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:338:11)
+    at Test.Object.&lt;anonymous&gt;.Test.assert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:209:21)
+    at Server.localAssert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:167:12)
+    at Object.onceWrapper (events.js:286:20)
+    at Server.emit (events.js:198:13)
+    at emitCloseNT (net.js:1619:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="Getting result of a particular student" name="Getting result of a particular student" time="0">
+      <failure message="MongooseError: Operation `marks.deleteMany()` buffering timed out after 10000ms
+    at setTimeout (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:198:23)
+    at Timeout.callback (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jsdom/lib/jsdom/browser/Window.js:678:19)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)" type="AssertionError">
+      </failure>
+      <failure message="Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.Error: Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:25:45)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+    at process._tickCallback (internal/process/next_tick.js:68:7)" type="AssertionError">
+      </failure>
+      <failure message="Error: expected 200 &quot;OK&quot;, got 404 &quot;Not Found&quot;
+    at Object.&lt;anonymous&gt;.test (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/test/grades.test.js:130:6)
+    at Object.asyncJestTest (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at resolve (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at promise.then (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
+----
+    at Test.Object.&lt;anonymous&gt;.Test._assertStatus (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:304:12)
+    at /mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:80:15
+    at Test.Object.&lt;anonymous&gt;.Test._assertFunction (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:338:11)
+    at Test.Object.&lt;anonymous&gt;.Test.assert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:209:21)
+    at Server.localAssert (/mnt/d/Documents/Selfwork/acf584da-56e6-48da-b104-1f1ee7c8c4ab/node_modules/supertest/lib/test.js:167:12)
+    at Object.onceWrapper (events.js:286:20)
+    at Server.emit (events.js:198:13)
+    at emitCloseNT (net.js:1619:8)
+    at process._tickCallback (internal/process/next_tick.js:63:19)" type="AssertionError">
+      </failure>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>
