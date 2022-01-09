@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 //connection to database
 mongoose.connect(
-  "mongodb+srv://root:root123@cluster0.lal0e.mongodb.net/grade-application?retryWrites=true&w=majority",
+  "mongodb://127.0.0.1:27017/grade-application",
   {
     useCreateIndex: true,
     useFindAndModify: true,

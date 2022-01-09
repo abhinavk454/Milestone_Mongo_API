@@ -31,6 +31,15 @@ const marksSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  average: {
+    type: Number,
+  },
+  grade: {
+    type: String,
+  },
+  cgpa: {
+    type: Number,
+  },
 });
 
 //setting up the marks collection
