@@ -45,39 +45,85 @@ gradesRouter.post("/add", async (req, res, next) => {
   }
 });
 // gradesRouter.get();
+
+// gradesRouter.get("/results/:dept", async (req, res, next) => {
+//   const marks = await Marks.find({ dept: req.params.dept });
+//   try {
+//     console.log("In dept");
+//     res.status(200).send(marks);
+//     res.end();
+//   } catch (error) {
+//     res.status(500).send(error);
+//   }
+// });
+
+// gradesRouter.get("/results/:id", async (req, res, next) => {
+//   const marks = await Marks.findById(req.params.id);
+//   try {
+//     console.log("In id");
+//     res.status(200).send(marks);
+//     res.end();
+//   } catch (error) {
+//     res.status(500).send(error);
+//   }
+// });
+
 gradesRouter.get("/results", async (req, res, next) => {
-  const marks = await Marks.find({});
-  marks.forEach((mark) => {
-    var avg =
-      (mark.sub_1 + mark.sub_2 + mark.sub_3 + mark.sub_4 + mark.sub_5) / 5;
-    mark.average = avg;
-    if (avg >= 75) {
-      mark.grade = "O";
-      mark.cgpa = 9.2;
-    } else if (avg >= 68) {
-      mark.grade = "A";
-      mark.cgpa = 8.4;
-    } else if (avg >= 58) {
-      mark.grade = "B";
-      mark.cgpa = 6.8;
-    } else if (avg >= 48) {
-      mark.grade = "F";
-      mark.cgpa = 4.4;
-    } else if (avg >= 40) {
-      mark.grade = "C";
-      mark.cgpa = 2.0;
-    } else {
-      mark.grade = "F";
-      mark.cgpa = 0.0;
+  console.log(req.query);
+  if (req.query.dept) {
+    const marks = await Marks.find({ dept: req.query.dept });
+    try {
+      console.log("In dept");
+      res.status(200).send(marks);
+      res.end();
+    } catch (error) {
+      res.status(500).send(error);
     }
-  });
-  try {
-    console.log(marks);
-    res.status(200).send(marks);
-  } catch (error) {
-    res.status(500).send(error);
+  } else if (req.query.id) {
+    const marks = await Marks.findById(req.query.id);
+    try {
+      console.log("In id");
+      res.status(200).send(marks);
+      res.end();
+    } catch (error) {
+      res.status(500).send(error);
+    }
+  } else {
+    const marks = await Marks.find({});
+    marks.forEach((mark) => {
+      var avg =
+        (mark.sub_1 + mark.sub_2 + mark.sub_3 + mark.sub_4 + mark.sub_5) / 5;
+      mark.average = avg;
+      if (avg >= 75) {
+        mark.grade = "O";
+        mark.cgpa = 9.2;
+      } else if (avg >= 68) {
+        mark.grade = "A";
+        mark.cgpa = 8.4;
+      } else if (avg >= 58) {
+        mark.grade = "B";
+        mark.cgpa = 6.8;
+      } else if (avg >= 48) {
+        mark.grade = "F";
+        mark.cgpa = 4.4;
+      } else if (avg >= 40) {
+        mark.grade = "C";
+        mark.cgpa = 2.0;
+      } else {
+        mark.grade = "F";
+        mark.cgpa = 0.0;
+      }
+      mark.save();
+    });
+    try {
+      console.log("marks");
+      res.status(200).send(marks);
+    } catch (error) {
+      res.status(500).send(error);
+    }
   }
 });
+
 // gradesRouter.put();
 gradesRouter.put("/", (req, res, next) => {});
 // gradesRouter.delete();
