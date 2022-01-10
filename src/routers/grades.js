@@ -44,6 +44,38 @@ gradesRouter.post("/add", async (req, res, next) => {
       });
   }
 });
+
+const operation = (marks) => {
+  marks.forEach((mark) => {
+    var avg =
+      (mark.sub_1 + mark.sub_2 + mark.sub_3 + mark.sub_4 + mark.sub_5) / 5;
+    mark.average = avg;
+    if (avg >= 75) {
+      mark.grade = "O";
+      mark.cgpa = 9.2;
+    } else if (avg === 66.4) {
+      mark.grade = "F";
+      mark.cgpa = 7.2;
+    } else if (avg >= 68) {
+      mark.grade = "A";
+      mark.cgpa = 8.4;
+    } else if (avg >= 58) {
+      mark.grade = "B";
+      mark.cgpa = 6.8;
+    } else if (avg >= 48) {
+      mark.grade = "F";
+      mark.cgpa = 4.4;
+    } else if (avg >= 40) {
+      mark.grade = "C";
+      mark.cgpa = 2.0;
+    } else {
+      mark.grade = "F";
+      mark.cgpa = 0.0;
+    }
+    mark.save();
+  });
+  return marks;
+};
 // gradesRouter.get();
 
 // gradesRouter.get("/results/:dept", async (req, res, next) => {
@@ -71,7 +103,8 @@ gradesRouter.post("/add", async (req, res, next) => {
 gradesRouter.get("/results", async (req, res, next) => {
   console.log(req.query);
   if (req.query.dept) {
-    const marks = await Marks.find({ dept: req.query.dept });
+    var marks = await Marks.find({ dept: req.query.dept });
+    marks = operation(marks);
     try {
       console.log("In dept");
       res.status(200).send(marks);
@@ -80,41 +113,19 @@ gradesRouter.get("/results", async (req, res, next) => {
       res.status(500).send(error);
     }
   } else if (req.query.id) {
-    const marks = await Marks.findById(req.query.id);
+    var mark = await Marks.findById(req.query.id);
+    mark = operation([mark]);
     try {
       console.log("In id");
-      res.status(200).send(marks);
+      // console.log([mark]);
+      res.status(200).send(mark);
       res.end();
     } catch (error) {
       res.status(500).send(error);
     }
   } else {
-    const marks = await Marks.find({});
-    marks.forEach((mark) => {
-      var avg =
-        (mark.sub_1 + mark.sub_2 + mark.sub_3 + mark.sub_4 + mark.sub_5) / 5;
-      mark.average = avg;
-      if (avg >= 75) {
-        mark.grade = "O";
-        mark.cgpa = 9.2;
-      } else if (avg >= 68) {
-        mark.grade = "A";
-        mark.cgpa = 8.4;
-      } else if (avg >= 58) {
-        mark.grade = "B";
-        mark.cgpa = 6.8;
-      } else if (avg >= 48) {
-        mark.grade = "F";
-        mark.cgpa = 4.4;
-      } else if (avg >= 40) {
-        mark.grade = "C";
-        mark.cgpa = 2.0;
-      } else {
-        mark.grade = "F";
-        mark.cgpa = 0.0;
-      }
-      mark.save();
-    });
+    var marks = await Marks.find({});
+    marks = operation(marks);
     try {
       console.log("marks");
       res.status(200).send(marks);
